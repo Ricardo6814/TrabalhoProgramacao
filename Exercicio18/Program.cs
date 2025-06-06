@@ -14,6 +14,8 @@ class Program
         double desconto = salarioBruto * 0.1; // 10% de desconto
         double salarioLiquido = salarioBruto - desconto;
 
+        //F2 é um formato de número que exibe duas casas decimais
+        
         Console.WriteLine("--- Salário ---");
         Console.WriteLine($"Salário bruto: R$ {salarioBruto:F2}");
         Console.WriteLine($"Desconto (10%): R$ {desconto:F2}");
