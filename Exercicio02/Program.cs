@@ -1,10 +1,14 @@
-﻿decimal area, tamanho, largura;
+﻿using System;
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Digite a quantidade de cavalos:");
+        int quantidadeCavalos = Convert.ToInt32(Console.ReadLine()); // Convert.ToInt32 converte uma string para um número inteiro (int)
 
-Console.WriteLine("Informe o tamanho do terreno em metros");
-tamanho = Convert.ToDecimal(Console.ReadLine());
+       int ferradurasNecessarias = quantidadeCavalos * 4; // Cada cavalo precisa de 4 ferraduras
 
-Console.WriteLine("Informe a largura do terreno em metros");
-largura = Convert.ToDecimal(Console.ReadLine());
-
-area = tamanho * largura;
-Console.WriteLine($"A área do terreno é {area} m².");
+        Console.WriteLine("--- Controle de Ferraduras ---");
+        Console.WriteLine($"Quantidade de cavalos: {quantidadeCavalos}, quantidade de ferraduras necessárias: {ferradurasNecessarias} ferraduras.");
+    }
+}

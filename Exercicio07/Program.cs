@@ -2,7 +2,10 @@
 class Program
 {
     static void Main()
+
     {
+        // int[] serve para armazenar a quantidade de dias de cada mês
+
         int[] diasPorMes = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
         Console.WriteLine("Digite o número do mês (1 a 12):");
         int mes = int.Parse(Console.ReadLine());
